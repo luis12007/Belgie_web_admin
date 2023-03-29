@@ -7,31 +7,31 @@ export default function Form() {
         navigate("/Home");
     }
     return (
-        <div>
-            <div className='text-success mt-5 ms-5 me-5'>
-            <div class="sidebar-header d-flex justify-content-start pt-5">
-                <h1 class="pt-3 fw-bold text-info">ECO</h1>
-                <h1 class="pt-3 fw-bold text-success text-primary text-opacity-75">GREEN</h1>
+        <div className='border shadow-lg  bg-white rounded flex-row  w-5/6'>
+            <div class=' place-items-center py-10 '>
+            <h1 class='flex justify-center font-bold text-sky-500'>
+                BelgieSV Administracion
+            </h1>
+            <p class='flex justify-center'>Sistema de inventario de waffles</p>
             </div>
+            <div className=' w-3/4 pl-32 py-5 '>
+            <h1 className='text-gray-400 font-semibold '>
+                Usuario
+            </h1>
+            <input type="text" className='bg-neutral-200 rounded-lg w-full py-2 ' id='' placeholder=''/>
             </div>
-            <div className='text-secondary mt-5 ms-5'>
-                <h2>Inicia sesion</h2>
+            <div className=' w-3/4 pl-32 py-5 '>
+            <h1 className='text-gray-400 font-semibold '>
+                Contraseña
+            </h1>
+            <input type="text" className='bg-neutral-200 rounded-lg w-full py-2 ' id='' placeholder=''/>
             </div>
-            <form className='mt-2 ms-5 me-5'>
-                <div className="form-floating mt-5">
-                    <input type="email" className="form-control" id="floatingInput" placeholder="name@example.com"></input>
-                    <label for="floatingInput">Correo electrónico</label>
-                </div>
-                <div className="form-floating mt-5">
-                    <input type="password" className="form-control" id="floatingPassword" placeholder="Contraseña"></input>
-                    <label for="floatingPassword">Contraseña</label>
-                </div>
-            </form>
-            <div className='mt-2 ms-5 me-5 text-center '>
-                <a href="ForgotPass" class="nav-link">¿olvidaste tu contraseña?</a>
+            <div className='flex justify-center py-5'>
+                <button className='border px-8 py-3 rounded-full text-cyan-50 bg-sky-500' >Ingresar</button>
             </div>
-            <div class="d-grid gap-2 mt-5 mb-3 ms-5 me-5">
-                <button class="btn btn-primary btn-lg" type="button" onClick={EnterHandler}>INICIAR SESION</button>
+            <div className='flex justify-center pb-10'>
+            <p className=''>Tienes problemas llama a soporte</p>
+            <a href="" className='ml-2 text-sky-500 underline-offset-2'> Mysoft soporte tecnico</a>
             </div>
         </div>
     );
