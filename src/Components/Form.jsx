@@ -27,7 +27,7 @@ export default function Form() {
             <input type="text" className='bg-neutral-200 rounded-lg w-full py-2 ' id='' placeholder=''/>
             </div>
             <div className='flex justify-center py-5'>
-                <button className='border px-8 py-3 rounded-full text-cyan-50 bg-sky-500' >Ingresar</button>
+                <button className='border px-8 py-3 rounded-full text-cyan-50 bg-sky-500' onClick={EnterHandler}>Ingresar</button>
             </div>
             <div className='flex justify-center pb-10'>
             <p className=''>Tienes problemas llama a soporte</p>
