@@ -4,7 +4,7 @@ import Services from '../Services/UserServices';
 import ItemsMod from './ModifyItem';
 
 /* Navigation bar component with all its buttons */
-export default function ItemDB(props) {
+export default function ItemDBCount(props) {
     const navigate = useNavigate();
 
     let dateObj = new Date(props.DiaCompra);
@@ -48,16 +48,8 @@ export default function ItemDB(props) {
     return (
 
                     <tr>
-                    <td className='border'>{props.idinventario}</td>
                     <td className='border'>{props.Nombre}</td>
                     <td className='border'>{props.Cantidad}</td>
-                    <td className='border'>{props.PrecioIndividual}</td>
-                    <td className='border'>{props.PrecioCaja}</td>
-                    <td className='border'>{NewDate}</td>
-                    <td className='border'>{NewDateCAD}</td>
-                    
-                    <td><button className='px-3 py-1 rounded-lg text-cyan-50 bg-orange-300 mx-3' onClick={Edit}>Editar</button></td>
-                    <td><button className='px-3 py-1 rounded-lg text-cyan-50 bg-red-400 mx-3' onClick={Delete}>Eliminar</button></td>
                     </tr>
 
     );
