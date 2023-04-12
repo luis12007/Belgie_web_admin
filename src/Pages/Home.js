@@ -13,12 +13,9 @@ export default function Home() {
                 <NavBar></NavBar>
             </div>
             <div className='mx-2 w-full '>
-                <div className='h-56'>
                     <Item></Item>
-                    
-                </div>
                     <div>
-                        <ItemMod></ItemMod>
+                    <ItemMod></ItemMod>
                     </div>
                 <div className='h-4/6 w-full   '>
                     <DB></DB>

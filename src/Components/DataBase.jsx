@@ -38,18 +38,25 @@ const PostContainerUser = () => {
         save(e.target.value);
     }
 
-    const SearchHandler = async (e) => {/* Cuando damos click al boton llamar a la funcion login */
-        e.preventDefault(); //para que no se recargue
+    const SearchHandler = async (e) => {/* Cuando damos click al boton llamar a la funcion login */ 
+    if (Search !== "") {
+        let response = await Services.GetByName(Search);
+        let data = response;
+        setPosts(data);
+    }else{
+        let response = await Services.GetAll(token);
+        let data = response;
+        setPosts(data);
+    }
         
     }
-
 
     return (
         <>
             <div className='border rounded-lg  bg-gray-100 drop-shadow-md mt-3 mx-3 mb-10 justify-center items-center '>
                 <div className='flex justify-end items-center mx-10 mt-5'>
                     <h1 className='mx-3'>busqueda: </h1>
-                    <input type="password" className='bg-neutral-200 rounded-lg  py-2 mx-3' placeholder=''
+                    <input type="text" className='bg-neutral-200 rounded-lg  py-2 mx-3' placeholder=''
                         value={Search}
                         onChange={(e) => onChange(e, setSearch)} />
                     <button className='border px-8 py-3 rounded-full text-cyan-50 bg-cyan-400' onClick={SearchHandler} >buscar</button>

@@ -66,7 +66,29 @@ Services.GetAll = async (token) => {/* Obtener todos con sus Props Limit y page,
     }
 }
 
+Services.GetAllSu = async () => {/* Obtener todos con sus Props Limit y page, para poder luego hacer el InfiniteScroll */
+    try {
+        const Response = await fetch(`${BASE_URL}/ProductsSum/`, {
+            method: "GET",
+        })
+        const data = await Response.json()
+        return data
+    } catch (error) {
+        console.log(error)
+    }
+}
 
+Services.GetByName = async (Nombre) => {/* Obtener todos con sus Props Limit y page, para poder luego hacer el InfiniteScroll */
+    try {
+        const Response = await fetch(`${BASE_URL}/Products/${Nombre}`, {
+            method: "GET"
+        })
+        const data = await Response.json()
+        return data
+    } catch (error) {
+        console.log(error)
+    }
+}
 
 Services.GetById = async (Id) => {/* Obtener todos con sus Props Limit y page, para poder luego hacer el InfiniteScroll */
     try {

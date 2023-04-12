@@ -41,16 +41,32 @@ export default function Item(props) {
                 setPrecioCaja("");
                 setDiaCompra("");
                 setCaducidad(""); 
+                localStorage.setItem("AddToggle", "false");
         }
     }
 
     const Exit = async (e) => {/* Cuando damos click al boton llamar a la funcion login */
     e.preventDefault();
-    navigate("/Home");
+    localStorage.setItem("AddToggle", false);
+    console.log(localStorage.getItem("AddToggle", "false"));
+    window.location.href = window.location.href;
     }
 
+
+
+    const AddToggle = true;
+    const readlocal = localStorage.getItem("AddToggle");
+    if (readlocal === true) {
+        AddToggle = true;
+    }else
+    console.log("a ver toogle")
+    console.log(AddToggle)
+
+
+
+
     return (
-        <div className='border rounded-lg  h-full bg-gray-100 drop-shadow-md mt-3 mx-3'>
+        <div className='border rounded-lg h-56 bg-gray-100 drop-shadow-md mt-3 mx-3'>
             <div className='flex'>
                 <div>
                     <div className=' w-3/4 pl-2 py-5 '>

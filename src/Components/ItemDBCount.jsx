@@ -41,12 +41,7 @@ export default function ItemDBCount(props) {
         window.location.href = window.location.href;
     }
 
-
-
-
-
     return (
-
                     <tr>
                     <td className='border'>{props.Nombre}</td>
                     <td className='border'>{props.Cantidad}</td>
