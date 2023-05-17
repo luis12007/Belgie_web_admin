@@ -6,24 +6,28 @@ import Exportexcel from 'react-export-excel';
 /* Navigation bar component with all its buttons */
 const DataBaseCount = () => {
     const [posts, setPosts] = useState([]);
+    const [postssu, setPostssu] = useState([]);
 
     const [Search, setSearch] = useState('');
 
     useEffect(() => {
-        getPosts();
+        getPostssu();
     }, []);
 
     /*     {   setPosts(false)} */
-    const getPosts = async () => {
 
-        let response = await Services.GetAllSu();
-        let data = response;
-        setPosts(data);
-    }
     const ExcelFile = Exportexcel.ExcelFile;
     const ExcelSheet = Exportexcel.ExcelSheet;
     const ExcelColumn = Exportexcel.ExcelColumn;
 
+
+    const getPostssu = async () => {
+
+        const token = localStorage.getItem("Token")
+        let response = await Services.GetAllSu();
+        let datasu = response;
+        setPostssu(datasu);
+    }
     console.log(posts);
 
 
@@ -47,15 +51,15 @@ const DataBaseCount = () => {
                                 <th className='border w-1/12 '>Nombre</th>
                                 <th className='border w-1/12  '>Cantidad</th>
                             </tbody>
-                            {posts && posts.map((data) => {
-                                return <ItemDBCount idinventario={data.idinventario} Nombre={data.Nombre} Cantidad={data.Cantidad} />
+                            {postssu && postssu.map((datasu) => {
+                                return <ItemDBCount idinventario={datasu.idinventario} Nombre={datasu.Nombre} Cantidad={datasu.Cantidad} />
                             })}
                         </table>
                     </div>
                 </div>
                 <div className='justify-center items-center flex'>
                 <ExcelFile element={<button className='border px-8 py-3 rounded-full text-cyan-50 bg-green-600 mt-5' >exportar a excel</button>} filename="Inventario Belgie">
-                    <ExcelSheet data={posts} name="Productos Belgie">
+                    <ExcelSheet datasu={postssu} name="Productos Belgie">
                         <ExcelColumn label="Nombre" value="Nombre" />
                         <ExcelColumn label="Cantidad" value="Cantidad" />
                     </ExcelSheet>
