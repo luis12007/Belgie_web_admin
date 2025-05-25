@@ -1,70 +1,84 @@
-# Getting Started with Create React App
+# Belgie Web Admin 📊
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+**My First ERP System - Inventory Management for Small Business**
 
-## Available Scripts
+## 📋 Project Overview
 
-In the project directory, you can run:
+Belgie Web Admin is my **first Enterprise Resource Planning (ERP) system**, built specifically for a small business in El Salvador. This project focused on core business operations with **inventory management** and **comprehensive reporting** capabilities.
 
-### `npm start`
+## 🎯 Business Purpose
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+Developed for a local small business to:
+- **Streamline inventory operations** - Track products, stock levels, and movements
+- **Generate business reports** - Provide insights for decision-making
+- **Digitize manual processes** - Replace paper-based inventory tracking
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## 🛠️ Technologies Used
 
-### `npm test`
+- **React.js** - Frontend framework with Create React App
+- **JavaScript ES6+** - Modern JavaScript features
+- **CSS/Styling** - Custom styling for business interface
+- **Local Storage/Database** - Data persistence
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## 🏢 Core Modules
 
-### `npm run build`
+### 📦 Inventory Management
+- ✅ Product catalog management
+- ✅ Stock level monitoring
+- ✅ Inventory movements (in/out)
+- ✅ Low stock alerts
+- ✅ Product search and filtering
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### 📈 Reports Module
+- ✅ Inventory reports
+- ✅ Stock movement history
+- ✅ Business analytics
+- ✅ Export functionality
+- ✅ Date-range filtering
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## 🌟 Key Achievements
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+**First ERP Experience** 🎓
+- Learned fundamental ERP concepts and business logic
+- Understood inventory management workflows
+- Implemented reporting systems for business insights
+- Gained experience with data visualization and export features
 
-### `npm run eject`
+**Real Business Impact** 💼
+- Helped a small business digitize their inventory process
+- Improved accuracy in stock tracking
+- Enabled data-driven decision making through reports
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+## 🚀 Getting Started
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+```bash
+# Clone the repository
+git clone https://github.com/luis12007/Belgie_web_admin.git
+cd Belgie_web_admin
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+# Install dependencies
+npm install
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+# Run the application
+npm start
+```
 
-## Learn More
+Access the admin panel at [http://localhost:3000](http://localhost:3000)
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+## 📊 Features Highlights
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+- **Dashboard**: Overview of inventory status and key metrics
+- **Product Management**: Add, edit, and organize inventory items
+- **Stock Control**: Monitor quantities and movements
+- **Reporting Engine**: Generate and export business reports
+- **User-Friendly Interface**: Designed for non-technical business users
 
-### Code Splitting
+## 🎓 Learning Outcomes
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+This first ERP project taught me:
+- **Business Process Understanding** - How small businesses manage inventory
+- **Data Management** - Organizing and tracking business data effectively
+- **User Experience Design** - Creating interfaces for business users
+- **Reporting Systems** - Building meaningful analytics and exports
 
-### Analyzing the Bundle Size
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
